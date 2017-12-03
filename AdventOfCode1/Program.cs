@@ -8,10 +8,41 @@ namespace AdventOfCode1
         private static CaptchaSolver _captchaSolver = new CaptchaSolver();
         static void Main(string[] args)
         {
-            Console.WriteLine($"Solving captcha: {_captcha}");
-            var answer = _captchaSolver.SolveCatpcha(_captcha);
-            Console.WriteLine($"Answer: {answer}");
-            Console.ReadKey();
+            while (true)
+            {
+                Console.WriteLine("Which part would you like to solve?");
+                Console.WriteLine("1) Part One");
+                Console.WriteLine("2) Part Two");
+                var userInput = Console.ReadKey(true);
+                var answer = "";
+                if (userInput.Key == ConsoleKey.D1 || userInput.Key == ConsoleKey.D2)
+                {
+                    switch (userInput.Key)
+                    {
+                        case ConsoleKey.D1:
+                            answer = _captchaSolver.SolveCatpcha(_captcha, false);
+                            break;
+                        case ConsoleKey.D2:
+                            answer = _captchaSolver.SolveCatpcha(_captcha, true);
+                            break;
+                    }
+                }
+                else
+                {
+                    Console.WriteLine("Please enter either option 1 or option 2");
+                    continue;
+                }
+
+                Console.WriteLine($"Solving captcha: {_captcha}");
+
+                Console.WriteLine($"Answer: {answer}");
+                Console.ReadKey();
+            }
+           
         }
+
+
     }
+
+
 }
