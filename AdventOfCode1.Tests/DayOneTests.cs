@@ -4,7 +4,7 @@ using System;
 namespace AdventOfCode1.Tests
 {
     [TestFixture]
-    public class Tests
+    public class DayOneTests
     {
         [TestCase("1122", "3", false)]
         [TestCase("1111", "4", false)]

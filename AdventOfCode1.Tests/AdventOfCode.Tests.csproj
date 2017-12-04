@@ -11,7 +11,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\AdventOfCode1\AdventOfCode1.csproj" />
+    <ProjectReference Include="..\AdventOfCode1\DayOne.csproj" />
+    <ProjectReference Include="..\DayTwo\DayTwo.csproj" />
   </ItemGroup>
 
 </Project>
