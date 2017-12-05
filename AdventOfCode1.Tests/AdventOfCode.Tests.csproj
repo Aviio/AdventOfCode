@@ -12,6 +12,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\AdventOfCode1\DayOne.csproj" />
+    <ProjectReference Include="..\DayThree\DayFour.csproj" />
     <ProjectReference Include="..\DayTwo\DayTwo.csproj" />
   </ItemGroup>
 

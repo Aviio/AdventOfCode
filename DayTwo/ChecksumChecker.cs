@@ -22,9 +22,10 @@ namespace DayTwo
             //surely there must be an easier way.... please
             foreach (var row in checksum)
             {
-                for (var i = 0; i <= (row.Length - 1); i++)
+                var rowLength = row.Length - 1;
+                for (var i = 0; i <= rowLength; i++)
                 {
-                    for (var m = 0; m <= (row.Length - 1); m++)
+                    for (var m = 0; m <= rowLength; m++)
                     {
                         if (row[i] > row[m])
                         {

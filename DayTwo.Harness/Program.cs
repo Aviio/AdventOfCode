@@ -27,10 +27,11 @@ namespace DayTwo.Harness
                 }
                
             }
-            Console.Write("Answer Day 1: ");
+            Console.Write("Answer Part 1: ");
             Console.WriteLine(_checksumChecker.CalculateChecksum(checksum));
-            Console.Write("Answer Day 2: ");
+            Console.Write("Answer Part 2: ");
             Console.WriteLine(_checksumChecker.CalculateDivisible(checksum));
+
             Console.ReadKey();
         }
     }
