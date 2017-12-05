@@ -24,5 +24,21 @@ namespace AdventOfCode.Tests
             var result = sut.CalculateChecksum(list);
             Assert.AreEqual(18, result);
         }
+
+        [Test]
+        public void TestChecksumDivision()
+        {
+            var sut = new ChecksumChecker();
+
+            List<int[]> list = new List<int[]>()
+            {
+                new int[]{5,9,2,8},
+                new int[]{9,4,7,3},
+                new int[]{3,8,6,5}
+            };
+
+            var result = sut.CalculateDivisible(list);
+            Assert.AreEqual(9, result);
+        }
     }
 }
